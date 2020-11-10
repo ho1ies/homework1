@@ -6,6 +6,8 @@ class Calculator:
      def __init__(self, master):
          self.master = master
          self.Interface()
+
+#程序事件处理
      def ButtonClick(self,var):
          # 获取文本框中的内容
          textcontent = self.content.get()
@@ -21,6 +23,7 @@ class Calculator:
              textcontent = ''
              self.content.set(textcontent)
 
+# 程序界面接口
      def Interface(self):
          # 设置文本框显示的字符串
          self.content = StringVar(self.master, '')
